@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Résidences de Bawe - Accueil | Motel de Luxe à Parakou</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Les Résidences de Bawe</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#featured">Nos Chambres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Bienvenue aux Résidences de Bawe</h1>
+            <p class="hero-subtitle">Votre havre de paix au cœur de Parakou, Bénin</p>
+        </div>
+    </section>
+
+    <!-- Présentation du Motel -->
+    <section class="about-preview" id="about">
+        <div class="container">
+            <h2 class="section-title">Découvrez Les Résidences de Bawe</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Un Accueil Chaleureux à Parakou</h3>
+                    <p>Depuis notre ouverture, Les Résidences de Bawe s'imposent comme la référence en matière d'hospitalité à Parakou. Nous combinons le confort
+                         moderne avec l'authenticité béninoise pour vous offrir une expérience unique.</p>
+                    
+                    <ul class="about-features">
+                        <li>Emplacement privilégié au centre de Parakou</li>
+                        <li>Service personnalisé 24h/24</li>
+                        <li>Chambres climatisées avec tout le confort</li>
+                        <li>Parking sécurisé et WiFi gratuit</li>
+                        <li>Proximité des attractions touristiques</li>
+                    </ul>
+                    
+                    <p>Notre personnel dévouée s'engage à faire de votre séjour un moment inoubliable, que ce soit pour les affaires ou le plaisir.</p>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-hotel"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chambres en Vedette -->
+    <section class="featured-rooms" id="featured">
+        <div class="container">
+            <h2 class="section-title">Nos Chambres en Vedette</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <span class="room-badge">Populaire</span>
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="room-info">
+                        <h3>Chambre Standard</h3>
+                        <div class="room-price">15 000 FCFA/nuit</div>
+                        <ul class="room-features">
+                            <li>Lit double confortable</li>
+                            <li>Salle de bain privée avec douche</li>
+                            <li>Climatisation moderne</li>
+                            <li>WiFi haut débit gratuit</li>
+                            <li>TV écran plat satellite</li>
+                            <li>Petit-déjeuner continental inclus</li>
+                        </ul>
+                        <button class="view-room-btn">Voir les Détails</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-image">
+                        <span class="room-badge">Recommandé</span>
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite Confort</h3>
+                        <div class="room-price">25 000 FCFA/nuit</div>
+                        <ul class="room-features">
+                            <li>Salon séparé spacieux</li>
+                            <li>Lit king-size premium</li>
+                            <li>Mini-bar bien approvisionné</li>
+                            <li>Balcon privé avec vue</li>
+                            <li>Service en chambre 24h/24</li>
+                            <li>Accès priority check-in</li>
+                        </ul>
+                        <button class="view-room-btn">Voir les Détails</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-image">
+                        <span class="room-badge">Luxe</span>
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite Présidentielle</h3>
+                        <div class="room-price">40 000 FCFA/nuit</div>
+                        <ul class="room-features">
+                            <li>2 chambres + salon privé</li>
+                            <li>Jacuzzi privé dans la suite</li>
+                            <li>Vue panoramique sur Parakou</li>
+                            <li>Service de conciergerie personnel</li>
+                            <li>Petit-déjeuner en chambre inclus</li>
+                            <li>Accès VIP à tous les services</li>
+                        </ul>
+                        <button class="view-room-btn">Voir les Détails</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Nous Contacter</h2>
+                <form id="contactForm" action="https://formspree.io/f/manjobda" method="POST" class="contact-form">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" placeholder="Votre email" required>
+                    </div>
+                    <div>
+                        <label for="commentaire">Commentaire</label>
+                        <textarea id="commentaire" name="commentaire" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div id="formMessage" class="form-message"></div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Excellent séjour aux Résidences de Bawe ! Le personnel est très accueillant et 
+                        les chambres sont 
+                        impeccables. Je recommande vivement pour un séjour à Parakou.
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <div class="testimonial-author">BABIO Abdoul - Natitingou</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Parfait pour les voyages d'affaires. L'emplacement est idéal, le WiFi fonctionne 
+                        parfaitement et le restaurant propose d'excellents plats locaux.
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <div class="testimonial-author">Jean-Baptiste Toko - Lagos</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Un vrai havre de paix ! La suite était spacieuse et confortable. Le personnel aux 
+                        petits soins nous a fait passer un week-end mémorable.
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <div class="testimonial-author">Fatima & Ahmed - Niamey</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt pour Votre Séjour ?</h2>
+                <p>Réservez dès maintenant et profitez de nos tarifs préférentiels</p>
+                <div class="cta-buttons">
+                    <a href="reservation.html" class="cta-btn primary">Réserver Maintenant</a>
+                    <a href="#contact" class="cta-btn secondary">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Les Résidences de Bawe</h3>
+                <p>Votre confort, notre priorité depuis toujours. Découvrez l'hospitalité béninoise dans un cadre moderne et chaleureux.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <a href="#hero">Accueil</a>
+                <a href="#about">À Propos</a>
+                <a href="#featured">Nos Chambres</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Quartier Bawe, Parakou, Bénin</p>
+                <p><i class="fas fa-phone"></i> +229 01 55 01 54 41 </p>
+                <p><i class="fas fa-envelope"></i> lesresidancesdebawe@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Les Résidences de Bawe. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/script.js">
+        
+    </script>
+</body>
+</html>
